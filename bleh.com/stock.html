@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kem — Stock</title>
+    <meta name="theme-color" content="#5dae58" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo-rr-transparent.png" type="image/png">
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Kem" />
+    <meta name="description" content="The current stock of items for sale." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://niggerhunters.cc/kem" />
+    <meta property="og:title" content="Kem" />
+    <meta property="og:description" content="The current stock of items for sale." />
+    <meta property="og:image" content="https://media.discordapp.net/attachments/1397054743209185312/1400835984043671642/451952713_740119944815577_4588846815174078010_n.jpg?ex=68c76eec&is=68c61d6c&hm=e8175f514e8322887387d371b883456b6a50f087745607ba0c5ebd55ca65219e&=&format=webp&width=902&height=902" />
+    <meta name="theme-color" content="#5dae58">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://niggerhunters.cc/kem" />
+    <meta property="twitter:title" content="Kem" />
+    <meta property="twitter:description" content="The current stock of items for sale." />
+    <meta property="twitter:image" content="https://media.discordapp.net/attachments/1397054743209185312/1400835984043671642/451952713_740119944815577_4588846815174078010_n.jpg?ex=68c76eec&is=68c61d6c&hm=e8175f514e8322887387d371b883456b6a50f087745607ba0c5ebd55ca65219e&=&format=webp&width=902&height=902" />
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="topbar-inner">
+            <a href="index.html"><img src="logo-rr-transparent.png" alt="Logo" class="logo"></a>
+            <h1 id="hero-text"></h1>
+        </div>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="stock.html" target="_self">Purchase</a>
+            <a href="discord.html" target="_blank" rel="noopener">Discord</a>
+            <a href="guns.html" target="_blank" rel="noopener">Socials</a>
+        </nav>
+        <div class="hamburger">
+            <button class="btn-burger" id="burger" aria-label="Open menu" aria-expanded="false">
+                <span class="lines"></span>
+            </button>
+            <div class="dropdown" id="dropdown">
+                <a href="index.html">Home</a>
+                <a href="stock.html" target="_self">Purchase</a>
+                <a href="discord.html" target="_blank" rel="noopener">Discord</a>
+                <a href="guns.html" target="_blank" rel="noopener">Socials</a>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <main>
+        <div class="wrap">
+            <section class="hero">
+                <div class="hero-buttons">
+                    <button class="btn-hero" id="show-dh-stock" aria-label="Show Da Hood Stock">Da Hood Stock</button>
+                    <button class="btn-hero" id="show-lim-stock" aria-label="Show Limiteds Stock">Limiteds
+                        Stock</button>
+                </div>
+            </section>
+            <!-- STOCK -->
+            <section class="card">
+                <h3>Stock <span class="badge">DA HOOD</span></h3>
+                <div class="search-bar">
+                    <input type="text" id="dh-search-input" placeholder="Search stock..." aria-label="Search stock">
+                </div>
+                <div class="stock-grid" id="dh-stock">
+                    <!-- Stock cards will be dynamically loaded here -->
+                    <div class="stock-card">
+                        <img src="/logo-rr-transparent.png" alt="Loading..." class="stock-icon">
+                        <h2 class="stock-name">Loading...</h2>
+                        <p class="stock-price">$...</p>
+                        <p class="stock-type">Loading...</p>
+                        <p class="stock-count">...</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card">
+                <h3>Stock <span class="badge">LIMITEDS</span></h3>
+                <div class="search-bar">
+                    <input type="text" id="lim-search-input" placeholder="Search stock..." aria-label="Search stock">
+                </div>
+                <div class="stock-grid" id="lim-stock">
+                    <!-- Stock cards will be dynamically loaded here -->
+                    <div class="stock-card">
+                        <img src="/logo-rr-transparent" alt="Loading..." class="stock-icon">
+                        <h2 class="stock-name">Loading...</h2>
+                        <p class="stock-price">$...</p>
+                        <p class="stock-type">Loading...</p>
+                        <p class="stock-count">...</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        © <span id="y"></span> Kem • All Rights Reserved • <a href="tos.html">Terms of Service</a>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="dh-stock.js"></script>
+    <script src="lim-stock.js"></script>
+</body>
+
+</html>
